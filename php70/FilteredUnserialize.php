@@ -35,5 +35,4 @@ $data = unserialize($serializedString, ["allowed_classes" => false]);
  * Forbidden to call any class __wakeup method
  * except white listed
  */
-$data = unserialize($serializedString, ["allowed_classes" => false]);
 $data = unserialize($serializedString, ["allowed_classes" => ["MyClass", "TestClass"]]);

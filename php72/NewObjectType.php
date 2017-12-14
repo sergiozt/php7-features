@@ -7,14 +7,12 @@
 //Parameter type
 function acceptsObject(object $obj)
 {
-    echo 'object was passed to unction' . PHP_EOL;
+    echo 'Object was passed to unction' . PHP_EOL;
 }
 
 acceptsObject(json_decode('{}'));
 acceptsObject(new stdClass());
-
 acceptsObject("Some test string");
-
 
 //Return type
 function correctFunction(): object

@@ -52,6 +52,7 @@ class testClass
 
 interface testInterface
 {
+    public function getNum();
 }
 
 trait testTrait
@@ -67,7 +68,13 @@ $anonymousClass = new class(10) extends testClass implements testInterface
         $this->num = $num;
     }
 
+    public function getNum()
+    {
+        return $this->num;
+    }
+
     use testTrait;
 };
 
+echo get_class($anonymousClass), PHP_EOL;
 var_dump($anonymousClass);

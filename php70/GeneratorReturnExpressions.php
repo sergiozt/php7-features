@@ -53,6 +53,7 @@ function getRangeGenerator($max)
     }
 }
 
+/** @var  Generator $ranges */
 $ranges = getRangeGenerator(PHP_INT_MAX);
 foreach ($ranges as $range) {
     echo "Dataset {$range}" . PHP_EOL;;

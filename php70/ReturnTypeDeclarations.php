@@ -16,14 +16,14 @@ function getInt(): int
     return 42;
 }
 
-echo getInt();
+echo getInt() . PHP_EOL;;
 
 function getIntStr(): int
 {
     return '42';
 }
 
-echo getIntStr();
+echo getIntStr() . PHP_EOL;
 
 /**
  * Example #2

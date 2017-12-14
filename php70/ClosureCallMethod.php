@@ -14,8 +14,7 @@ $getXCB = function ($int) {
     return $this->x + $int;
 };
 $getX = $getXCB->bindTo(new A, 'A'); // intermediate closure
-echo $getX(4); // 4
-
+echo $getX(4), PHP_EOL; // ?
 
 // PHP 7+ code
 $getX = function ($int) {

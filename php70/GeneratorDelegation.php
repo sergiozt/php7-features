@@ -19,7 +19,8 @@ $g = testGenerator();
 foreach ($g as $yielded) {
     echo $yielded . PHP_EOL;
 }
-//Get array of interfaces: class_implements(g);
+//Get array of interfaces: class_implements($g);
+//var_dump(class_implements($g));
 
 /**
  * Example #2
@@ -46,4 +47,4 @@ $generator = g2();
 foreach ($generator as $yielded) {
     echo $yielded . PHP_EOL;
 }
-echo ($generator->getReturn());
+echo($generator->getReturn());
